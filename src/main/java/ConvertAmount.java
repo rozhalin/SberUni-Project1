@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
 public class ConvertAmount {
+
+    static final double ROUBLES_PER_DOLLAR = 72.12;
     public static void main(String[] args) {
-        final double ROUBLES_PER_DOLLAR = 72.12;
 
         int dollars;
         double roubles;
@@ -11,6 +12,9 @@ public class ConvertAmount {
         int i;
 
         Scanner input = new Scanner(System.in);
+
+        //отобразить инструкцию
+        instruct();
 
         //Получать количество конвертаций по тех пор,
         //пока не введено корректное значение
@@ -48,11 +52,28 @@ public class ConvertAmount {
             }
 
             //Конвертировать сумму денег в российские рубли
-            roubles = ROUBLES_PER_DOLLAR * dollars;
+            roubles = find_roubles(dollars);
 
             //Отобразить сумму денег в российских рублях в пользу покупателя
             System.out.println((int) (roubles * 100) / 100.0
                     + " российского рубля.");
         }
+    }
+
+    /**
+     * Отображает инструкцию
+     */
+    public static void instruct() {
+        System.out.println("Эта программа конвертирует сумму денег "
+            + "из американских долларов в российские рубли.");
+        System.out.println("Курс покупки равен " + ROUBLES_PER_DOLLAR
+            + " рубля.\n");
+    }
+
+    /**
+     * Конвертирует сумму денег из американских долларов в российские рубли
+     */
+    public static double find_roubles(int dollars) {
+        return ROUBLES_PER_DOLLAR * dollars;
     }
 }

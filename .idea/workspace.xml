@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07ec1c54-17b1-4ec5-89b3-5e339fc45781" name="Changes" comment="-Part2">
+    <list default="true" id="07ec1c54-17b1-4ec5-89b3-5e339fc45781" name="Changes" comment="-Part3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ConvertAmount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConvertAmount.java" afterDir="false" />
     </list>
@@ -58,6 +58,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConvertAmount" />
         <item itemvalue="Application.ConvertAmount" />
       </list>
     </recent_temporary>
@@ -113,6 +114,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="-Part2" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Part2" />
+    <MESSAGE value="-Part3" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Part3" />
   </component>
 </project>
